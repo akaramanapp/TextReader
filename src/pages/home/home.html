@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Text Reader
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>Description</ion-label>
+        <ion-textarea [(ngModel)]="description" name="description"></ion-textarea>
+      </ion-item>
+      <ion-item>
+          <button (click)="speak()" ion-button>Konuş</button>
+      </ion-item>
+</ion-content>
